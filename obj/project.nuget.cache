@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "dgSpecHash": "yTyX4mEpXYp0hvF41ne9r7RE6GwcJ4IE1pdYwg8oF1IkGa2arGNDZIpji0ccZeCxWL66pZUUt6K4iWqEL9u0Ng==",
+  "success": true,
+  "projectFilePath": "W:\\projects\\C#\\.Net\\DBClasses\\DBClasses\\DBClasses.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\paloc\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\devexpressmvvm\\22.1.3\\devexpressmvvm.22.1.3.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\ironsoftware.system.drawing\\2023.6.1\\ironsoftware.system.drawing.2023.6.1.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\ironxl.excel\\2023.6.4\\ironxl.excel.2023.6.4.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\mvvmlightlibs\\4.4.32.1\\mvvmlightlibs.4.4.32.1.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\ncodefactory.toolkit.mvvm.wpf\\1.0.0.21\\ncodefactory.toolkit.mvvm.wpf.1.0.0.21.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\nlog\\2.1.0\\nlog.2.1.0.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\sixlabors.imagesharp\\3.0.0\\sixlabors.imagesharp.3.0.0.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\syncfusion.compression.base\\21.2.8\\syncfusion.compression.base.21.2.8.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\syncfusion.licensing\\21.2.8\\syncfusion.licensing.21.2.8.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\syncfusion.xlsio.wpf\\21.2.8\\syncfusion.xlsio.wpf.21.2.8.nupkg.sha512",
+    "C:\\Users\\paloc\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CommonServiceLocator 1.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CommonServiceLocator",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MvvmLightLibs 4.4.32.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NCodeFactory.Toolkit.Mvvm.Wpf 1.0.0.21' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NCodeFactory.Toolkit.Mvvm.Wpf",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NLog 2.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NLog",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
+}

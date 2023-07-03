@@ -1,0 +1,96 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:DBClasses"
+    xmlns:ViewModel="clr-namespace:DBClasses.ViewModel" x:Name="mainWindow" x:Class="DBClasses.MainWindow"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="700" Width="1000">
+    <Window.DataContext>
+        <ViewModel:TableViewModel />
+    </Window.DataContext>
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0" />
+                <GradientStop Color="#FF9CF3F9" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="50" />
+            <RowDefinition Height="Auto" MinHeight="50" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="TitleLabel" Text="{Binding Content, ElementName=TVShow_Button}"
+                       FontFamily="Comic Sans MS" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+            <Button Grid.Column="2" Content="Delete" VerticalAlignment="Center" Margin="0,0,10,0"
+                    Command="{Binding RemoveCommand, Mode=OneWay}"
+                    CommandParameter="{Binding SelectedItem, ElementName=MainDataGrid}" />
+            <Button Grid.Column="1" Content="Add" VerticalAlignment="Center" Margin="0,0,10,0"
+                    Command="{Binding AddCommand, Mode=OneWay}"
+                    CommandParameter="{Binding SelectedItem, ElementName=MainDataGrid}" />
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid Margin="15,20,0,0">
+                <ListView Background="{x:Null}" Foreground="Black" BorderBrush="{x:Null}">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                    <Button x:Name="TVShow_Button" Content="TV Shows"
+                            Command="{Binding TvShowTableCommand, Mode=OneWay}" />
+                    <Button Content="TV Channels" x:Name="TVChannel_Button" ClickMode="Press"
+                            Command="{Binding TvChannelTableCommand, Mode=OneWay}" />
+                    <Button x:Name="TVBroadcast_Button" Content="TV Broadcasts"
+                            Command="{Binding TvBroadcastTableCommand, Mode=OneWay}" />
+                </ListView>
+            </Grid>
+            <DataGrid Grid.Column="1" x:Name="MainDataGrid" CanUserAddRows="True"
+                      ColumnHeaderStyle="{Binding Mode=OneWay, Source={StaticResource HeaderStyle}}"
+                      AutoGenerateColumns="True" Background="{x:Null}" BorderBrush="{x:Null}"
+                      ItemsSource="{Binding CurrentTable}" ColumnWidth="*" MinColumnWidth="61"
+                      CanUserResizeColumns="False" />
+        </Grid>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Save">
+                    <MenuItem Header="Save to Json" Command="{Binding SaveJsonCommand, Mode=OneWay}"></MenuItem>
+                    <MenuItem Header="Save to Xml" Command="{Binding SaveXmlCommand, Mode=OneWay}"></MenuItem>
+                    <MenuItem Header="Save to Exel" Command="{Binding SaveExcelCommand}"></MenuItem>
+                    <MenuItem Header="Save to Word" Command="{Binding SaveWordCommand}"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Load">
+                    <MenuItem Header="Load Json" Command="{Binding LoadJsonCommand, Mode=OneWay}"></MenuItem>
+                    <MenuItem Header="Load Xml" Command="{Binding LoadXmlCommand, Mode=OneWay}"></MenuItem>
+                    <MenuItem Header="Load Exel" Command="{Binding LoadExcelCommand, Mode=OneWay}"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Table">
+                <MenuItem Header="Remove row" Command="{Binding RemoveCommand, Mode=OneWay}"
+                          CommandParameter="{Binding SelectedItem, ElementName=MainDataGrid}">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+
+    </Grid>
+</Window>

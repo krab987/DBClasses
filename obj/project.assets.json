@@ -1,0 +1,698 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0-windows7.0": {
+      "BitMiracle.LibTiff.NET/2.4.649": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "DevExpressMvvm/22.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/DevExpress.Mvvm.UI.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/netcoreapp3.0/DevExpress.Mvvm.dll": {
+            "related": ".deps.json;.pdb;.UI.deps.json;.UI.pdb"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/DevExpress.Mvvm.UI.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/netcoreapp3.0/DevExpress.Mvvm.dll": {
+            "related": ".deps.json;.pdb;.UI.deps.json;.UI.pdb"
+          }
+        }
+      },
+      "IronSoftware.System.Drawing/2023.6.1": {
+        "type": "package",
+        "dependencies": {
+          "BitMiracle.LibTiff.NET": "2.4.649",
+          "SixLabors.ImageSharp": "3.0.0",
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/net60/IronSoftware.Drawing.Common.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net60/IronSoftware.Drawing.Common.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
+      "IronXL.Excel/2023.6.4": {
+        "type": "package",
+        "dependencies": {
+          "IronSoftware.System.Drawing": "2023.6.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/IronXL.dll": {
+            "related": ".dll.config;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronXL.dll": {
+            "related": ".dll.config;.pdb;.xml"
+          }
+        }
+      },
+      "MvvmLightLibs/4.4.32.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/GalaSoft.MvvmLight.Extras.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net45/GalaSoft.MvvmLight.dll": {
+            "related": ".Extras.pdb;.Extras.xml;.pdb;.xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/GalaSoft.MvvmLight.Extras.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net45/GalaSoft.MvvmLight.dll": {
+            "related": ".Extras.pdb;.Extras.xml;.pdb;.xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NCodeFactory.Toolkit.Mvvm.Wpf/1.0.0.21": {
+        "type": "package",
+        "dependencies": {
+          "MvvmLightLibs": "4.4.32.1",
+          "NLog": "2.1.0"
+        },
+        "compile": {
+          "lib/net45/NCodeFactory.Toolkit.Mvvm.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NCodeFactory.Toolkit.Mvvm.Wpf.dll": {}
+        }
+      },
+      "NLog/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SixLabors.ImageSharp.props": {}
+        }
+      },
+      "Syncfusion.Compression.Base/21.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/21.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows7.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.XlsIO.Wpf/21.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Base": "21.2.8",
+          "Syncfusion.Licensing": "21.2.8"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BitMiracle.LibTiff.NET/2.4.649": {
+      "sha512": "XCEdfCphKo0UAvSg1h/OzOFWtjkIGnPMAziYkNqV7NVrqb/tZJTBxJhxIEX7gpvQwg8GIRYt133SUncfkKfjLA==",
+      "type": "package",
+      "path": "bitmiracle.libtiff.net/2.4.649",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
+        "bitmiracle.libtiff.net.nuspec",
+        "lib/net40/BitMiracle.LibTiff.NET.dll",
+        "lib/net40/BitMiracle.LibTiff.NET.xml",
+        "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
+        "lib/netstandard2.0/BitMiracle.LibTiff.NET.xml"
+      ]
+    },
+    "CommonServiceLocator/1.3.0": {
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "type": "package",
+      "path": "commonservicelocator/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.1.3.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
+    "DevExpressMvvm/22.1.3": {
+      "sha512": "6i5YRaC26BT2vrNqQzakUOp3w1Rz416j5qf16ZSVK3qKXQFnfYvLfG4gma/n0g/E1Q2zIQfc0jSp6rDZ28Qmew==",
+      "type": "package",
+      "path": "devexpressmvvm/22.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpressmvvm.22.1.3.nupkg.sha512",
+        "devexpressmvvm.nuspec",
+        "icon.png",
+        "lib/net452/DevExpress.Mvvm.UI.dll",
+        "lib/net452/DevExpress.Mvvm.UI.pdb",
+        "lib/net452/DevExpress.Mvvm.dll",
+        "lib/net452/DevExpress.Mvvm.pdb",
+        "lib/netcoreapp3.0/DevExpress.Mvvm.UI.deps.json",
+        "lib/netcoreapp3.0/DevExpress.Mvvm.UI.dll",
+        "lib/netcoreapp3.0/DevExpress.Mvvm.UI.pdb",
+        "lib/netcoreapp3.0/DevExpress.Mvvm.deps.json",
+        "lib/netcoreapp3.0/DevExpress.Mvvm.dll",
+        "lib/netcoreapp3.0/DevExpress.Mvvm.pdb",
+        "license.txt"
+      ]
+    },
+    "IronSoftware.System.Drawing/2023.6.1": {
+      "sha512": "rm1/5s3Ge9jckyrzOVrauwp4gGdm6U4AqkTcletmvYWdRhq8Pg0dXrxBM4fHnoXk4UDuY4n8per/Lun9hVkdbw==",
+      "type": "package",
+      "path": "ironsoftware.system.drawing/2023.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.txt",
+        "docs/README.md",
+        "images/ironsoftware-logo.png",
+        "ironsoftware.system.drawing.2023.6.1.nupkg.sha512",
+        "ironsoftware.system.drawing.nuspec",
+        "lib/net60/IronSoftware.Drawing.Common.deps.json",
+        "lib/net60/IronSoftware.Drawing.Common.dll",
+        "lib/net60/IronSoftware.Drawing.Common.pdb",
+        "lib/net60/IronSoftware.Drawing.Common.xml",
+        "lib/netstandard2.0/IronSoftware.Drawing.Common.deps.json",
+        "lib/netstandard2.0/IronSoftware.Drawing.Common.dll",
+        "lib/netstandard2.0/IronSoftware.Drawing.Common.pdb",
+        "lib/netstandard2.0/IronSoftware.Drawing.Common.xml"
+      ]
+    },
+    "IronXL.Excel/2023.6.4": {
+      "sha512": "zcOq7jw6SfYeKBiB3g1ne8oQpLfYMrk9levO28Bq0Z+VwAB7J9OYzlr9/YTBrhI1aQx0w52NKeM6Pz6R+Fv0NQ==",
+      "type": "package",
+      "path": "ironxl.excel/2023.6.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EULA.txt",
+        "docs/README.md",
+        "images/iron-logo-128.png",
+        "ironxl.excel.2023.6.4.nupkg.sha512",
+        "ironxl.excel.nuspec",
+        "lib/netstandard2.0/IronXL.dll",
+        "lib/netstandard2.0/IronXL.dll.config",
+        "lib/netstandard2.0/IronXL.pdb",
+        "lib/netstandard2.0/IronXL.xml",
+        "readme-setup.txt",
+        "readme.txt"
+      ]
+    },
+    "MvvmLightLibs/4.4.32.1": {
+      "sha512": "EbHbkFiriIOx3s0D5bCoqRxLe42xWdd6tuH1dILEhFwHfGini+XE1rjUZR2yaO7OldAkfYxC1Ml65ncnyzCovg==",
+      "type": "package",
+      "path": "mvvmlightlibs/4.4.32.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/SL4/GalaSoft.MvvmLight.Extras.dll",
+        "lib/SL4/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/SL4/GalaSoft.MvvmLight.Extras.xml",
+        "lib/SL4/GalaSoft.MvvmLight.dll",
+        "lib/SL4/GalaSoft.MvvmLight.pdb",
+        "lib/SL4/GalaSoft.MvvmLight.xml",
+        "lib/SL4/System.Windows.Interactivity.dll",
+        "lib/SL4/System.Windows.Interactivity.xml",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.dll",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.xml",
+        "lib/SL5/GalaSoft.MvvmLight.dll",
+        "lib/SL5/GalaSoft.MvvmLight.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.xml",
+        "lib/SL5/System.Windows.Interactivity.dll",
+        "lib/SL5/System.Windows.Interactivity.xml",
+        "lib/monoandroid/GalaSoft.MvvmLight.Extras.XML",
+        "lib/monoandroid/GalaSoft.MvvmLight.Extras.dll",
+        "lib/monoandroid/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/monoandroid/GalaSoft.MvvmLight.XML",
+        "lib/monoandroid/GalaSoft.MvvmLight.dll",
+        "lib/monoandroid/GalaSoft.MvvmLight.pdb",
+        "lib/monoandroid/Microsoft.Practices.ServiceLocation.dll",
+        "lib/monoandroid/Microsoft.Practices.ServiceLocation.pdb",
+        "lib/monoandroid/Microsoft.Practices.ServiceLocation.xml",
+        "lib/net35/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net35/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net35/GalaSoft.MvvmLight.dll",
+        "lib/net35/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.xml",
+        "lib/net35/System.Windows.Interactivity.dll",
+        "lib/net35/System.Windows.Interactivity.xml",
+        "lib/net40/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net40/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net40/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net40/GalaSoft.MvvmLight.dll",
+        "lib/net40/GalaSoft.MvvmLight.pdb",
+        "lib/net40/GalaSoft.MvvmLight.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "lib/net45/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net45/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net45/GalaSoft.MvvmLight.dll",
+        "lib/net45/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/net45/System.Windows.Interactivity.xml",
+        "lib/netcore45/GalaSoft.MvvmLight.Extras.dll",
+        "lib/netcore45/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/netcore45/GalaSoft.MvvmLight.Extras.pri",
+        "lib/netcore45/GalaSoft.MvvmLight.Extras.xml",
+        "lib/netcore45/GalaSoft.MvvmLight.dll",
+        "lib/netcore45/GalaSoft.MvvmLight.pdb",
+        "lib/netcore45/GalaSoft.MvvmLight.pri",
+        "lib/netcore45/GalaSoft.MvvmLight.xml",
+        "lib/sl4-wp71/GalaSoft.MvvmLight.Extras.dll",
+        "lib/sl4-wp71/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/sl4-wp71/GalaSoft.MvvmLight.Extras.xml",
+        "lib/sl4-wp71/GalaSoft.MvvmLight.dll",
+        "lib/sl4-wp71/GalaSoft.MvvmLight.pdb",
+        "lib/sl4-wp71/GalaSoft.MvvmLight.xml",
+        "lib/sl4-wp71/Microsoft.Practices.ServiceLocation.dll",
+        "lib/sl4-wp71/Microsoft.Practices.ServiceLocation.xml",
+        "lib/sl4-wp71/System.Windows.Interactivity.dll",
+        "lib/sl4-wp71/System.Windows.Interactivity.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp8/GalaSoft.MvvmLight.dll",
+        "lib/wp8/GalaSoft.MvvmLight.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.xml",
+        "lib/wp8/System.Windows.Interactivity.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/wpa81/GalaSoft.MvvmLight.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.pdb",
+        "lib/wpa81/Microsoft.Practices.ServiceLocation.dll",
+        "lib/wpa81/Microsoft.Practices.ServiceLocation.xml",
+        "mvvmlightlibs.4.4.32.1.nupkg.sha512",
+        "mvvmlightlibs.nuspec"
+      ]
+    },
+    "NCodeFactory.Toolkit.Mvvm.Wpf/1.0.0.21": {
+      "sha512": "6bNJBp8A+2wLuqF+bkFJzZEAa+VM4Hs3Du4tG9Lv7X+Z97XhuucEElRDT93vbSfgSNNfIHZrjleCc0Yszz7r7A==",
+      "type": "package",
+      "path": "ncodefactory.toolkit.mvvm.wpf/1.0.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NCodeFactory.Toolkit.Mvvm.Wpf.dll",
+        "ncodefactory.toolkit.mvvm.wpf.1.0.0.21.nupkg.sha512",
+        "ncodefactory.toolkit.mvvm.wpf.nuspec"
+      ]
+    },
+    "NLog/2.1.0": {
+      "sha512": "VntSdKVHvCG2qWV0IwJkYnjJ9aJ9+MHG9Gg3fK9rEKMTaCOKZnCyty2sxvvuLx27m70UY4V+DDbgtVxv9cTSFw==",
+      "type": "package",
+      "path": "nlog/2.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/NLog.dll",
+        "lib/net20/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40/NLog.dll",
+        "lib/net40/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/sl2/NLog.dll",
+        "lib/sl2/NLog.xml",
+        "lib/sl3-wp/NLog.dll",
+        "lib/sl3-wp/NLog.xml",
+        "lib/sl3/NLog.dll",
+        "lib/sl3/NLog.xml",
+        "lib/sl4-windowsphone71/NLog.dll",
+        "lib/sl4-windowsphone71/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "nlog.2.1.0.nupkg.sha512",
+        "nlog.nuspec",
+        "tools/net20/InstallNLogConfig.exe",
+        "tools/net35/InstallNLogConfig.exe",
+        "tools/net40/InstallNLogConfig.exe",
+        "tools/net45/InstallNLogConfig.exe",
+        "tools/sl2/_._",
+        "tools/sl3-wp/_._",
+        "tools/sl3/_._",
+        "tools/sl4-windowsphone71/_._",
+        "tools/sl4/InstallNLogConfig.exe",
+        "tools/sl5/InstallNLogConfig.exe"
+      ]
+    },
+    "SixLabors.ImageSharp/3.0.0": {
+      "sha512": "ETEHRfUAn/rExqdmj2GDayPkW9zr3BruO9S4WF9ULpWmdydewIjoJqinbQc+o4DsM3X0wGZPyJLlj6N3uxV/aw==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.0.0.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "Syncfusion.Compression.Base/21.2.8": {
+      "sha512": "XnfSxkkspSyJ5Yeg0wQ2SM0WxeERHg6boD7X/0F18nb/nSmE0GnC4MPVDergJ9kwDU2ykJI2XVqS9U/KEPx/sA==",
+      "type": "package",
+      "path": "syncfusion.compression.base/21.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net40/Syncfusion.Compression.Base.dll",
+        "lib/net40/Syncfusion.Compression.Base.xml",
+        "lib/net45/Syncfusion.Compression.Base.dll",
+        "lib/net45/Syncfusion.Compression.Base.xml",
+        "lib/net451/Syncfusion.Compression.Base.dll",
+        "lib/net451/Syncfusion.Compression.Base.xml",
+        "lib/net46/Syncfusion.Compression.Base.dll",
+        "lib/net46/Syncfusion.Compression.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Compression.Base.xml",
+        "syncfusion.compression.base.21.2.8.nupkg.sha512",
+        "syncfusion.compression.base.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/21.2.8": {
+      "sha512": "Q4BagjTP28tKChemRZI602M3hH74nOxWQgdomRSFbm1ole17nKir1KHdhR/m96TIEDAPCa1QQ/U0DLHaX0h11Q==",
+      "type": "package",
+      "path": "syncfusion.licensing/21.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0-windows7.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.21.2.8.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.XlsIO.Wpf/21.2.8": {
+      "sha512": "pItvyFL3gzPTHImOFfnHFW8F4Iw23yB/IYuY0S4oAnUcWh+535axvHj3wPc+ocRj5MKAHbslHZClWsLitWe2BA==",
+      "type": "package",
+      "path": "syncfusion.xlsio.wpf/21.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.XlsIO.Base.dll",
+        "lib/net40/Syncfusion.XlsIO.Base.xml",
+        "lib/net45/Syncfusion.XlsIO.Base.dll",
+        "lib/net45/Syncfusion.XlsIO.Base.xml",
+        "lib/net451/Syncfusion.XlsIO.Base.dll",
+        "lib/net451/Syncfusion.XlsIO.Base.xml",
+        "lib/net46/Syncfusion.XlsIO.Base.dll",
+        "lib/net46/Syncfusion.XlsIO.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.xml",
+        "syncfusion.xlsio.wpf.21.2.8.nupkg.sha512",
+        "syncfusion.xlsio.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0-windows7.0": [
+      "DevExpressMvvm >= 22.1.3",
+      "IronXL.Excel >= 2023.6.4",
+      "NCodeFactory.Toolkit.Mvvm.Wpf >= 1.0.0.21",
+      "Syncfusion.XlsIO.Wpf >= 21.2.8"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\paloc\\.nuget\\packages\\": {},
+    "W:\\programms\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "W:\\projects\\C#\\.Net\\DBClasses\\DBClasses\\DBClasses.csproj",
+      "projectName": "DBClasses",
+      "projectPath": "W:\\projects\\C#\\.Net\\DBClasses\\DBClasses\\DBClasses.csproj",
+      "packagesPath": "C:\\Users\\paloc\\.nuget\\packages\\",
+      "outputPath": "W:\\projects\\C#\\.Net\\DBClasses\\DBClasses\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "W:\\programms\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\paloc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "DevExpressMvvm": {
+            "target": "Package",
+            "version": "[22.1.3, )"
+          },
+          "IronXL.Excel": {
+            "target": "Package",
+            "version": "[2023.6.4, )"
+          },
+          "NCodeFactory.Toolkit.Mvvm.Wpf": {
+            "target": "Package",
+            "version": "[1.0.0.21, )"
+          },
+          "Syncfusion.XlsIO.Wpf": {
+            "target": "Package",
+            "version": "[21.2.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CommonServiceLocator 1.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CommonServiceLocator",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MvvmLightLibs 4.4.32.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NCodeFactory.Toolkit.Mvvm.Wpf 1.0.0.21' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NCodeFactory.Toolkit.Mvvm.Wpf",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NLog 2.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NLog",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
+}

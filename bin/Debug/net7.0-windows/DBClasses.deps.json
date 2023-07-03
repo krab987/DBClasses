@@ -1,0 +1,248 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DBClasses/1.0.0": {
+        "dependencies": {
+          "DevExpressMvvm": "22.1.3",
+          "IronXL.Excel": "2023.6.4",
+          "NCodeFactory.Toolkit.Mvvm.Wpf": "1.0.0.21",
+          "Syncfusion.XlsIO.Wpf": "21.2.8"
+        },
+        "runtime": {
+          "DBClasses.dll": {}
+        }
+      },
+      "BitMiracle.LibTiff.NET/2.4.649": {
+        "runtime": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "assemblyVersion": "2.4.649.0",
+            "fileVersion": "2.4.649.0"
+          }
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        }
+      },
+      "DevExpressMvvm/22.1.3": {
+        "runtime": {
+          "lib/netcoreapp3.0/DevExpress.Mvvm.UI.dll": {
+            "assemblyVersion": "22.1.0.0",
+            "fileVersion": "22.1.0.0"
+          },
+          "lib/netcoreapp3.0/DevExpress.Mvvm.dll": {
+            "assemblyVersion": "22.1.0.0",
+            "fileVersion": "22.1.0.0"
+          }
+        }
+      },
+      "IronSoftware.System.Drawing/2023.6.1": {
+        "dependencies": {
+          "BitMiracle.LibTiff.NET": "2.4.649",
+          "SixLabors.ImageSharp": "3.0.0",
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net60/IronSoftware.Drawing.Common.dll": {
+            "assemblyVersion": "2023.6.1.0",
+            "fileVersion": "2023.6.1.0"
+          }
+        }
+      },
+      "IronXL.Excel/2023.6.4": {
+        "dependencies": {
+          "IronSoftware.System.Drawing": "2023.6.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronXL.dll": {
+            "assemblyVersion": "2023.6.4.0",
+            "fileVersion": "2023.6.4.0"
+          }
+        }
+      },
+      "MvvmLightLibs/4.4.32.1": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "runtime": {
+          "lib/net45/GalaSoft.MvvmLight.Extras.dll": {
+            "assemblyVersion": "4.4.32.39728",
+            "fileVersion": "4.4.32.39728"
+          },
+          "lib/net45/GalaSoft.MvvmLight.dll": {
+            "assemblyVersion": "4.4.32.39728",
+            "fileVersion": "4.4.32.39728"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "3.0.30810.0"
+          }
+        }
+      },
+      "NCodeFactory.Toolkit.Mvvm.Wpf/1.0.0.21": {
+        "dependencies": {
+          "MvvmLightLibs": "4.4.32.1",
+          "NLog": "2.1.0"
+        },
+        "runtime": {
+          "lib/net45/NCodeFactory.Toolkit.Mvvm.Wpf.dll": {
+            "assemblyVersion": "1.0.0.21",
+            "fileVersion": "1.0.0.21"
+          }
+        }
+      },
+      "NLog/2.1.0": {
+        "runtime": {
+          "lib/net45/NLog.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/3.0.0": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "Syncfusion.Compression.Base/21.2.8": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "21.2.8.0",
+            "fileVersion": "21.2.8.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/21.2.8": {
+        "runtime": {
+          "lib/net7.0-windows7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "21.2.8.0",
+            "fileVersion": "21.2.8.0"
+          }
+        }
+      },
+      "Syncfusion.XlsIO.Wpf/21.2.8": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "21.2.8",
+          "Syncfusion.Licensing": "21.2.8"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll": {
+            "assemblyVersion": "21.2.8.0",
+            "fileVersion": "21.2.8.0"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {}
+    }
+  },
+  "libraries": {
+    "DBClasses/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BitMiracle.LibTiff.NET/2.4.649": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XCEdfCphKo0UAvSg1h/OzOFWtjkIGnPMAziYkNqV7NVrqb/tZJTBxJhxIEX7gpvQwg8GIRYt133SUncfkKfjLA==",
+      "path": "bitmiracle.libtiff.net/2.4.649",
+      "hashPath": "bitmiracle.libtiff.net.2.4.649.nupkg.sha512"
+    },
+    "CommonServiceLocator/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "path": "commonservicelocator/1.3.0",
+      "hashPath": "commonservicelocator.1.3.0.nupkg.sha512"
+    },
+    "DevExpressMvvm/22.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6i5YRaC26BT2vrNqQzakUOp3w1Rz416j5qf16ZSVK3qKXQFnfYvLfG4gma/n0g/E1Q2zIQfc0jSp6rDZ28Qmew==",
+      "path": "devexpressmvvm/22.1.3",
+      "hashPath": "devexpressmvvm.22.1.3.nupkg.sha512"
+    },
+    "IronSoftware.System.Drawing/2023.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rm1/5s3Ge9jckyrzOVrauwp4gGdm6U4AqkTcletmvYWdRhq8Pg0dXrxBM4fHnoXk4UDuY4n8per/Lun9hVkdbw==",
+      "path": "ironsoftware.system.drawing/2023.6.1",
+      "hashPath": "ironsoftware.system.drawing.2023.6.1.nupkg.sha512"
+    },
+    "IronXL.Excel/2023.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zcOq7jw6SfYeKBiB3g1ne8oQpLfYMrk9levO28Bq0Z+VwAB7J9OYzlr9/YTBrhI1aQx0w52NKeM6Pz6R+Fv0NQ==",
+      "path": "ironxl.excel/2023.6.4",
+      "hashPath": "ironxl.excel.2023.6.4.nupkg.sha512"
+    },
+    "MvvmLightLibs/4.4.32.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EbHbkFiriIOx3s0D5bCoqRxLe42xWdd6tuH1dILEhFwHfGini+XE1rjUZR2yaO7OldAkfYxC1Ml65ncnyzCovg==",
+      "path": "mvvmlightlibs/4.4.32.1",
+      "hashPath": "mvvmlightlibs.4.4.32.1.nupkg.sha512"
+    },
+    "NCodeFactory.Toolkit.Mvvm.Wpf/1.0.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6bNJBp8A+2wLuqF+bkFJzZEAa+VM4Hs3Du4tG9Lv7X+Z97XhuucEElRDT93vbSfgSNNfIHZrjleCc0Yszz7r7A==",
+      "path": "ncodefactory.toolkit.mvvm.wpf/1.0.0.21",
+      "hashPath": "ncodefactory.toolkit.mvvm.wpf.1.0.0.21.nupkg.sha512"
+    },
+    "NLog/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VntSdKVHvCG2qWV0IwJkYnjJ9aJ9+MHG9Gg3fK9rEKMTaCOKZnCyty2sxvvuLx27m70UY4V+DDbgtVxv9cTSFw==",
+      "path": "nlog/2.1.0",
+      "hashPath": "nlog.2.1.0.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ETEHRfUAn/rExqdmj2GDayPkW9zr3BruO9S4WF9ULpWmdydewIjoJqinbQc+o4DsM3X0wGZPyJLlj6N3uxV/aw==",
+      "path": "sixlabors.imagesharp/3.0.0",
+      "hashPath": "sixlabors.imagesharp.3.0.0.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Base/21.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XnfSxkkspSyJ5Yeg0wQ2SM0WxeERHg6boD7X/0F18nb/nSmE0GnC4MPVDergJ9kwDU2ykJI2XVqS9U/KEPx/sA==",
+      "path": "syncfusion.compression.base/21.2.8",
+      "hashPath": "syncfusion.compression.base.21.2.8.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/21.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q4BagjTP28tKChemRZI602M3hH74nOxWQgdomRSFbm1ole17nKir1KHdhR/m96TIEDAPCa1QQ/U0DLHaX0h11Q==",
+      "path": "syncfusion.licensing/21.2.8",
+      "hashPath": "syncfusion.licensing.21.2.8.nupkg.sha512"
+    },
+    "Syncfusion.XlsIO.Wpf/21.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pItvyFL3gzPTHImOFfnHFW8F4Iw23yB/IYuY0S4oAnUcWh+535axvHj3wPc+ocRj5MKAHbslHZClWsLitWe2BA==",
+      "path": "syncfusion.xlsio.wpf/21.2.8",
+      "hashPath": "syncfusion.xlsio.wpf.21.2.8.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    }
+  }
+}
