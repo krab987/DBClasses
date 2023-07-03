@@ -64,6 +64,7 @@
                             Command="{Binding TvBroadcastTableCommand, Mode=OneWay}" />
                 </ListView>
             </Grid>
+            
             <DataGrid Grid.Column="1" x:Name="MainDataGrid" CanUserAddRows="True"
                       ColumnHeaderStyle="{Binding Mode=OneWay, Source={StaticResource HeaderStyle}}"
                       AutoGenerateColumns="True" Background="{x:Null}" BorderBrush="{x:Null}"
